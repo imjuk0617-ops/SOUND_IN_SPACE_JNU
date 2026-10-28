@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#f9f8f4" name="theme-color"/>
+<meta content="SOUND IN SPACE · 소리로 쌓아 올린 하나의 공간. 2026년 11월 26일 18:00, 제주다온아트홀. 공연 프로그램 및 연주자 안내." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="SOUND IN SPACE | 공연 프로그램" property="og:title"/>
+<meta content="소리로 쌓아 올린 하나의 공간 · 2026.11.26 18:00 · 제주다온아트홀" property="og:description"/>
+<title>SOUND IN SPACE | 공연 프로그램</title>
+<style>
+    :root {
+      --ink: #111315;
+      --muted: #6c6d70;
+      --paper: #f9f8f4;
+      --line: #d6d4cc;
+      --coral: #f07360;
+      --blue: #65a9df;
+      --green: #83a88b;
+      --pink: #edafbb;
+      --yellow: #efc26d;
+      --lilac: #b5a8dc;
+      --serif: "Bodoni MT", Didot, "Times New Roman", "Noto Serif", Georgia, serif;
+      --sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); -webkit-font-smoothing:antialiased; word-break:keep-all; }
+    a { color:inherit; text-decoration:none; }
+    button {font:inherit;}
+    img { display:block; max-width:100%; }
+    .sr-only {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+    .skip { position:absolute; left:12px; top:-100px; padding:12px 16px; color:white; background:black; z-index:50; }
+    .skip:focus {top:12px;}
+    .progress {position:fixed;z-index:30;top:0;left:0;width:0;height:3px;background:var(--coral);pointer-events:none;}
+    .wrap {max-width:1240px; margin:0 auto; padding:0 clamp(20px,4.2vw,54px);}
+    .header {padding-top:29px;}
+    .masthead {display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:27px;}
+    .brand {display:inline-flex; align-items:center; gap:11px; min-width:0; font-size:10px; font-weight:720; letter-spacing:.18em;}
+    .brand-symbol {width:31px;height:31px; display:grid; place-items:center;border:1.6px solid #111;border-radius:50%;font:700 15px/1 var(--serif);letter-spacing:-.08em;}
+    .mast-nav {display:flex;align-items:center;gap:22px;font-size:10px;letter-spacing:.06em;font-weight:700;}
+    .mast-nav a {border-bottom:1px solid transparent;padding:7px 0;transition:border-color .2s;}
+    .mast-nav a:hover {border-color:currentColor;}
+    .poster-title {display:flex;align-items:baseline;justify-content:space-between;gap:0;margin:0;white-space:nowrap;font:400 clamp(29px,8.1vw,117px)/.95 var(--serif);letter-spacing:-.065em;}
+    .poster-title .poster-n {font-style:normal;}
+    .title-rule {border:0;border-top:5px solid #101113;margin:12px 0 21px;}
+    .cover {position:relative;margin:0;overflow:hidden;background:#e2e5e4;isolation:isolate;}
+    .cover img {width:100%;height:auto;aspect-ratio:1.78;object-fit:cover;object-position:center 46%;}
+    .cover-label {position:absolute;left:clamp(13px,2.2vw,28px);bottom:clamp(13px,2vw,24px);padding:11px 13px;background:rgba(255,255,255,.94);border:1px solid rgba(17,19,21,.13);font-size:10px;font-weight:700;letter-spacing:.12em;line-height:1;}
+    .edition {display:inline-block;margin-left:9px;color:#6c6d70;font-weight:500;letter-spacing:0;}
+    .event {background:#111315;color:#f9f8f4;}
+    .event-inner {display:grid;grid-template-columns:minmax(240px,1.4fr) repeat(3,minmax(110px,.6fr));gap:30px;align-items:end;padding-top:34px;padding-bottom:36px;}
+    .event-caption {margin:0 0 14px;font-size:10px;color:#e0c9b9;letter-spacing:.21em;font-weight:750;}
+    .event h2 {margin:0;font-size:clamp(23px,2.8vw,35px);line-height:1.3;letter-spacing:-.055em;font-weight:720;}
+    .event-item {border-left:1px solid rgba(255,255,255,.23);padding-left:16px;}
+    .event-item .key {display:block;margin-bottom:10px;font:700 10px/1 var(--sans);letter-spacing:.18em;color:#aeb0b2;}
+    .event-item .value {display:block;font-weight:680;letter-spacing:-.03em;font-size:clamp(15px,1.9vw,21px);white-space:nowrap;}
+    .event-item .value small {font-size:.64em;font-weight:500;letter-spacing:0;color:#c7c7c7;}
+    .section-nav {display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:29px;padding-bottom:29px;border-bottom:1px solid var(--line);}
+    .section-nav .instruction {font-size:11px;letter-spacing:.08em;font-weight:750;}
+    .anchor-link {display:inline-flex;align-items:center;gap:9px;font-size:11px;font-weight:680;border-bottom:1px solid #111;padding:5px 0;}
+    .arrow {font-size:15px;line-height:1;}
+    .program-section {padding-top:75px;padding-bottom:95px;}
+    .section-intro {display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:43px;}
+    .section-kicker {margin:0 0 16px;font-size:11px;font-weight:760;letter-spacing:.2em;}
+    .section-intro h2 {margin:0;font:400 clamp(54px,8.6vw,108px)/.88 var(--serif);letter-spacing:-.067em;}
+    .section-intro .sub {margin:16px 0 0;font-size:15px;letter-spacing:-.025em;font-weight:620;}
+    .program-count {font:400 19px/1.2 var(--serif);white-space:nowrap;margin:0 3px 6px 0;color:#787b7e;}
+    .program-count strong {font-size:36px;font-weight:400;color:#111315;}
+    .program-list {border-top:2px solid #1a1a1a;}
+    .item {--accent:#edab94;--wash:#f9e7dd;display:grid;grid-template-columns:205px minmax(0,1fr);gap:34px;padding:38px 0 42px;border-bottom:1px solid var(--line);scroll-margin-top:25px;}
+    .item:nth-child(1){--accent:#f0a18e;--wash:#fcebe4;}
+    .item:nth-child(2){--accent:#91b7dc;--wash:#eaf2fb;}
+    .item:nth-child(3){--accent:#a7bd8a;--wash:#eff3e7;}
+    .item:nth-child(4){--accent:#beb0df;--wash:#f0eafa;}
+    .item:nth-child(5){--accent:#efbf73;--wash:#fcf3e0;}
+    .item:nth-child(6){--accent:#e9a7b4;--wash:#f9ecf0;}
+    .item-ident {display:flex;flex-direction:column;align-items:start;}
+    .item-number {display:block;font:400 80px/.9 var(--serif);letter-spacing:-.05em;}
+    .item-label {margin-top:19px;display:inline-block;font-size:10px;font-weight:760;letter-spacing:.115em;line-height:1.5;}
+    .item-stroke {display:block;margin-top:19px;width:71px;height:5px;background:var(--accent);}
+    .works {min-width:0;}
+    .work + .work {margin-top:24px;padding-top:26px;border-top:1px dashed #cecdc8;}
+    .composer {font-size:12px;line-height:1.6;font-weight:720;color:#64656b;margin:1px 0 9px;}
+    .work h3 {font:400 clamp(23px,3vw,36px)/1.18 var(--serif);letter-spacing:-.025em;margin:0;overflow-wrap:break-word;}
+    .work h3.small {font-size:clamp(21px,2.6vw,32px);}
+    .arrangement {font-size:12px;color:var(--muted);margin:8px 0 0;}
+    .movements {padding:0;margin:21px 0 0;display:grid;gap:8px;list-style:none;}
+    .movements li {display:flex;align-items:start;gap:9px;line-height:1.5;font-size:13px;color:#42464a;}
+    .movements .roman {min-width:36px;font:italic 17px/1.25 var(--serif);color:#8c8b88;}
+    .performers {display:flex;align-items:start;gap:18px;flex-wrap:wrap;margin-top:27px;background:var(--wash);padding:18px 20px 19px;}
+    .performers-label {flex:0 0 100%;font-size:10px;font-weight:760;letter-spacing:.135em;margin-bottom:2px;}
+    .person {display:inline-flex;gap:6px;align-items:baseline;white-space:nowrap;font-size:12px;font-weight:760;}
+    .person abbr {text-decoration:none;font-size:10px;font-weight:620;color:#777776;}
+    .footer {background:#141719;color:#fff;position:relative;overflow:hidden;}
+    .footer::before {content:"";position:absolute;right:-110px;top:-160px;width:410px;height:410px;border:2px solid rgba(255,255,255,.1);border-radius:50%;box-shadow:0 0 0 45px rgba(255,255,255,.025),0 0 0 95px rgba(255,255,255,.02);pointer-events:none;}
+    .footer-inner {position:relative;padding-top:58px;padding-bottom:50px;}
+    .footer-kicker {font-size:10px;letter-spacing:.2em;color:#d8bd9e;font-weight:760;margin:0 0 10px;}
+    .footer h2 {font:400 clamp(40px,7vw,73px)/1 var(--serif);letter-spacing:-.055em;margin:0 0 12px;}
+    .footer p {font-size:12px;line-height:1.8;color:#c8c9c9;margin:0;}
+    .footer-links {display:flex;align-items:center;gap:21px;flex-wrap:wrap;margin-top:30px;}
+    .download {display:inline-flex;justify-content:center;align-items:center;gap:13px;padding:15px 20px;background:#f8f8f6;color:#111315;font-size:12px;font-weight:750;transition:background .2s;}
+    .download:hover {background:#dfebf9;}
+    .toplink {font-size:12px;border-bottom:1px solid rgba(255,255,255,.7);padding-bottom:5px;}
+    .footer-bottom {border-top:1px solid #434647;margin-top:65px;padding-top:17px;font-size:10px;letter-spacing:.12em;color:#a7a9ab;display:flex;justify-content:space-between;gap:15px;}
+    @media (max-width:1000px) {
+      .event-inner {grid-template-columns:1.4fr repeat(3,1fr);gap:16px;}
+      .event h2{font-size:26px;}
+      .event-item {padding-left:12px;}
+      .event-item .value {font-size:16px;}
+      .item {grid-template-columns:150px minmax(0,1fr);gap:25px;}
+      .item-number {font-size:69px;}
+    }
+    @media (max-width:700px) {
+      .header {padding-top:18px;}
+      .masthead {margin-bottom:25px;}
+      .mast-nav {gap:14px;}
+      .brand {font-size:9px;letter-spacing:.09em;}
+      .brand-symbol {width:28px;height:28px;font-size:13px;}
+      .poster-title {font-size:8.1vw;letter-spacing:-.052em;}
+      .title-rule {border-top-width:3px;margin:10px 0 13px;}
+      .cover img {aspect-ratio:1/1.0;object-position:center center;}
+      .cover-label {font-size:9px;}
+      .event-inner {grid-template-columns:repeat(3,minmax(0,1fr));column-gap:12px;row-gap:24px;padding-top:30px;padding-bottom:30px;}
+      .event-title {grid-column:1 / -1;}
+      .event-caption {font-size:9px;margin-bottom:8px;}
+      .event h2 {font-size:clamp(23px,5.5vw,30px);}
+      .event-item {padding-left:10px;}
+      .event-item .key {font-size:9px;margin-bottom:7px;letter-spacing:.11em;}
+      .event-item .value {font-size:clamp(13px,3.4vw,19px);}
+      .section-nav{padding-top:22px;padding-bottom:22px;}
+      .program-section{padding-top:57px;padding-bottom:73px;}
+      .section-intro {margin-bottom:31px;}
+      .section-intro h2{font-size:clamp(60px,13vw,88px);}
+      .section-intro .sub {font-size:13px;}
+      .program-count {font-size:15px;}
+      .program-count strong{font-size:29px;}
+      .item{grid-template-columns:1fr;gap:21px;padding:31px 0 34px;}
+      .item-ident{display:flex;flex-direction:row;gap:17px;align-items:center;}
+      .item-number{font-size:61px;}
+      .item-label{margin:0;font-size:10px;}
+      .item-stroke{margin:0 0 0 auto;width:36px;height:4px;}
+      .work h3{font-size:clamp(24px,6.2vw,31px);}
+      .work h3.small{font-size:clamp(22px,5.5vw,27px);}
+      .composer{font-size:11px;}
+      .performers{margin-top:24px;padding:17px;gap:12px 17px;}
+      .footer-inner{padding-top:46px;padding-bottom:30px;}
+      .footer-bottom{margin-top:53px;}
+    }
+    @media (max-width:370px) {
+      .wrap{padding-left:17px;padding-right:17px;}
+      .mast-nav{font-size:9px;gap:10px;}
+      .poster-title{font-size:8.1vw;}
+      .event-item .value{font-size:12px;}
+      .event-item .value small{font-size:9px;}
+      .cover-label{padding:8px;}
+      .edition {margin-left:3px;}
+    }
+    @media (prefers-reduced-motion: reduce) { html {scroll-behavior:auto;} *,*::before,*::after {transition:none!important;} }
+  
+    /* Full programme notes, tucked into expandable sections for mobile reading */
+    .program-note {margin-top:24px;border:1px solid #d3d1c9;border-radius:3px;overflow:hidden;background:#fffefa;}
+    .program-note summary {list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;padding:17px 18px;font-size:13px;font-weight:750;letter-spacing:-.01em;user-select:none;min-height:54px;}
+    .program-note summary::-webkit-details-marker {display:none;}
+    .program-note summary:focus-visible{outline:2px solid var(--blue);outline-offset:-3px;}
+    .note-more {width:25px;height:25px;border-radius:50%;background:var(--wash);display:grid;place-items:center;font-size:19px;line-height:1;font-weight:400;flex:0 0 25px;transition:transform .2s;}
+    .program-note[open] .note-more {transform:rotate(45deg);}
+    .note-body {border-top:1px solid #e5e2db;padding:19px 19px 23px;font-size:13px;line-height:1.9;letter-spacing:-.02em;color:#35383b;}
+    .note-body p {margin:0 0 13px;}
+    .note-body p:last-child {margin-bottom:0;}
+    .note-body h4 {font-size:12px;color:#252628;margin:22px 0 7px;font-weight:780;}
+    .note-body h4:first-child {margin-top:0;}
+    .note-intro {font-size:11px;line-height:1.7;color:#696e71;margin:5px 0 0;}
+    @media(max-width:700px){.program-note {margin-top:19px;}.program-note summary{padding:15px 14px;}.note-body{padding:15px 15px 20px;font-size:13px;line-height:1.85;}}
+</style>
+<style>
+/* 2026-10-28: Show the complete notes by default — no accordions or clicks needed. */
+.program-note.visible-note { margin-top: 28px; padding:0; border: 0; border-top: 2px solid var(--accent); border-radius:0; background:transparent; overflow:visible; }
+.visible-note .note-heading { margin:0; padding:17px 0 0; color:#191b1d; font-size:15px; font-weight:800; letter-spacing:-.025em; }
+.visible-note .note-body { margin:0; padding:12px 0 0; border:0; color:#2f3032; font-size:14px; line-height:1.9; letter-spacing:-.018em; }
+.visible-note .note-body p { margin:0 0 14px; }
+.visible-note .note-body h4 { margin:18px 0 6px; font-size:13px; font-weight:780; }
+@media(max-width:700px){.program-note.visible-note{margin-top:23px}.visible-note .note-heading{padding-top:15px}.visible-note .note-body{padding:10px 0 0;font-size:14px;line-height:1.8}}
+</style>
+<style>
+/* Poster reference: exact word spacing and underline, fluid without clipping */
+.poster-title {display:block; width:100%; margin:0 0 clamp(14px, 2vw, 22px); font-size:initial; line-height:0; white-space:normal; letter-spacing:normal;}
+.poster-title img {display:block; width:100%; height:auto; max-width:none;}
+@media (max-width:700px) {.poster-title {margin-bottom:13px;}}
+</style></head>
+<body>
+<a class="skip" href="#program">프로그램으로 바로가기</a>
+<div aria-hidden="true" class="progress" id="progress"></div>
+<header class="header" id="top">
+<div class="wrap">
+<div class="masthead">
+<div class="brand"><span aria-hidden="true" class="brand-symbol">S</span><span>2026 CONCERT PROGRAM</span></div>
+<nav aria-label="페이지 메뉴" class="mast-nav"><a href="#info">공연 안내</a><a href="#program">PROGRAM ↗</a></nav>
+</div>
+<h1 class="poster-title"><img src="./sound-in-space-title.png" width="1004" height="112" alt="SOUND IN SPACE" fetchpriority="high"/></h1>
+<figure class="cover">
+<img alt="아치형 계단과 다채로운 공간 곳곳에서 여러 악기를 연주하는 음악가들의 실루엣" fetchpriority="high" height="1219" src="./concert-art.webp" width="1405"/>
+<figcaption class="cover-label">SOUND IN SPACE<span class="edition">/ 2026</span></figcaption>
+</figure>
+</div>
+</header>
+<section aria-labelledby="event-title" class="event" id="info">
+<div class="wrap event-inner">
+<div class="event-title">
+<p class="event-caption">SOUND IN SPACE</p>
+<h2 id="event-title">소리로 쌓아 올린<br/>하나의 공간</h2>
+</div>
+<div class="event-item"><span class="key">DATE</span><span class="value">2026.11.26</span></div>
+<div class="event-item"><span class="key">TIME</span><span class="value">18:00</span></div>
+<div class="event-item"><span class="key">VENUE</span><span class="value">제주다온아트홀</span></div>
+</div>
+</section>
+<div aria-label="프로그램 안내" class="wrap section-nav"><span class="instruction">연주 순서 · 연주자 · 전체 곡 설명</span><a class="anchor-link" href="#program">PROGRAM VIEW <span aria-hidden="true" class="arrow">↓</span></a></div>
+<main class="wrap program-section" id="program">
+<div class="section-intro">
+<div><p class="section-kicker">THE PERFORMANCE</p><h2>Program</h2><p class="sub">연주 순서와 전체 곡 설명을 아래에서 바로 확인할 수 있습니다.</p></div>
+<p class="program-count"><strong>06</strong> / 06</p>
+</div>
+<div class="program-list">
+<section aria-labelledby="work-01" class="item" id="program-01">
+<div class="item-ident"><span class="item-number">01</span><span class="item-label">VIOLIN &amp;<br/>DOUBLE BASS</span><span aria-hidden="true" class="item-stroke"></span></div>
+<div class="works"><div class="work"><p class="composer">Reinhold Moritzevich Glière</p><h3 id="work-01">8 Pieces for Violin and DoubleBass, Op. 39</h3>
+<ol class="movements"><li><span class="roman">I.</span>Prelude</li><li><span class="roman">II.</span>Gavotte</li><li><span class="roman">V.</span>Intermezzo</li><li><span class="roman">VIII.</span>Scherzo</li></ol><section aria-label="곡 설명" class="program-note visible-note"><h4 class="note-heading">곡 설명</h4><div class="note-body"><p>라인홀트 글리에르의 《바이올린과 첼로를 위한 8개의 소품》은 두 현악기의 조화로운 선율 속에서 서정성과 경쾌함, 다채로운 음악적 색채를 보여주는 작품이다. 이번 연주에서는 제1, 2, 5, 8악장을 통해 각 악장의 개성 있는 분위기와 두 악기의 섬세한 호흡을 선보인다.</p>
+<h4>제1악장. Prelude (프렐류드)</h4><p>차분하고 서정적인 선율이 두 악기의 조화 속에서 펼쳐지며, 작품의 문을 여는 악장이다.</p>
+<h4>제2악장. Gavotte (가보트)</h4><p>우아하고 경쾌한 춤곡의 리듬이 돋보이며, 두 악기의 생동감 있는 주고받음이 매력을 더한다.</p>
+<h4>제5악장. Intermezzo (인터메초)</h4><p>섬세하고 감성적인 분위기 속에서 두 악기가 서로의 선율을 이어받으며 서정적인 아름다움을 표현한다.</p>
+<h4>제8악장. Scherzo (스케르초)</h4><p>빠르고 활기찬 리듬과 재치 있는 악기 간의 대화가 돋보이며, 경쾌한 에너지로 작품을 마무리한다.</p></div></section></div>
+<div class="performers"><span class="performers-label">PERFORMERS / 연주자</span><span class="person"><abbr title="Violin">Vn.</abbr>장로사</span><span class="person"><abbr title="Double Bass">Db.</abbr>이진</span></div>
+</div>
+</section>
+<section aria-labelledby="work-02" class="item" id="program-02">
+<div class="item-ident"><span class="item-number">02</span><span class="item-label">STRING<br/>QUARTET</span><span aria-hidden="true" class="item-stroke"></span></div>
+<div class="works"><div class="work"><p class="composer">Ludwig van Beethoven</p><h3 id="work-02">String Quartet No. 1 in F Major, Op. 18, No. 1</h3>
+<ol class="movements"><li><span class="roman">I.</span>Allegro con brio</li></ol><section aria-label="곡 설명" class="program-note visible-note"><h4 class="note-heading">곡 설명</h4><div class="note-body"><p>루트비히 판 베토벤의 초기 명작인 현악 4중주 제1번 F장조, Op.18 No.1은 고전주의 전통 위에 베토벤만의 독창적인 음악적 개성이 싹트기 시작한 작품입니다.</p><p>제1악장 Allegro con brio는 시작 부분의 짧고 힘찬 동기를 바탕으로 고전 소나타 형식을 입체적으로 펼쳐냅니다. 네 악기가 주고받는 섬세한 선율과 강렬한 셈여림의 대비는 곡 전체에 팽팽한 긴장감과 유쾌한 생동감을 불어넣습니다.</p></div></section></div>
+<div class="performers"><span class="performers-label">PERFORMERS / 연주자</span><span class="person"><abbr title="Violin 1">Vn1.</abbr>이주영</span><span class="person"><abbr title="Violin 2">Vn2.</abbr>고광운</span><span class="person"><abbr title="Viola">Va.</abbr>김민혜</span><span class="person"><abbr title="Cello">Vc.</abbr>양해인</span></div>
+</div>
+</section>
+<section aria-labelledby="work-03" class="item" id="program-03">
+<div class="item-ident"><span class="item-number">03</span><span class="item-label">PERCUSSION<br/>ENSEMBLE</span><span aria-hidden="true" class="item-stroke"></span></div>
+<div class="works"><div class="work"><p class="composer">Emmanuel Séjourné</p><h3 id="work-03">Losa</h3><section aria-label="곡 설명" class="program-note visible-note"><h4 class="note-heading">곡 설명</h4><div class="note-body"><p>《Losa》와 《Fiesta Colors》는 타악기 특유의 다채로운 음색과 역동적인 리듬을 통해 음악의 생동감과 에너지를 전달하는 작품이다.</p><p>《Losa》는 플라멩코 특유의 열정과 긴장감 넘치는 리듬을 표현하며, 강렬한 악센트와 섬세한 앙상블이 돋보인다.</p></div></section></div>
+<div class="work"><p class="composer">Nils Rohwer</p><h3>Fiesta Colores</h3><section aria-label="곡 설명" class="program-note visible-note"><h4 class="note-heading">곡 설명</h4><div class="note-body"><p>《Fiesta Colors》는 축제의 다채로운 색채와 활기찬 분위기를 연상시키며, 경쾌한 리듬과 풍성한 음향으로 즐거움을 선사한다. 서로 다른 매력을 지닌 두 작품은 타악기 앙상블만의 개성과 표현력을 한층 풍부하게 보여준다.</p></div></section></div>
+<div class="performers"><span class="performers-label">PERFORMERS / 연주자</span><span class="person"><abbr title="Vibraphone">Vibraphone</abbr>김경남</span><span class="person"><abbr title="Percussion">Per</abbr>문준형</span><span class="person"><abbr title="Marimba">Marimba</abbr>양준범</span></div>
+</div>
+</section>
+<section aria-labelledby="work-04" class="item" id="program-04">
+<div class="item-ident"><span class="item-number">04</span><span class="item-label">CLARINET<br/>QUARTET</span><span aria-hidden="true" class="item-stroke"></span></div>
+<div class="works"><div class="work"><p class="composer">Satoshi Yagisawa</p><h3 id="work-04">Chignon</h3><section aria-label="곡 설명" class="program-note visible-note"><h4 class="note-heading">곡 설명</h4><div class="note-body"><p>‘Chignon’은 머리를 뒤로 모아 틀어 올린 헤어스타일을 의미한다. 작곡가는 콩쿠르에서 시뇽 스타일로 머리를 한 클라리넷 연주자들을 보고 영감을 얻었다. 음악은 리드미컬한 선율로 시작하여 점차 다양한 리듬의 변화를 보여준다. 이후 왈츠의 분위기를 거쳐 빠르고 경쾌한 춤곡으로 발전한다. 춤의 생동감과 클라리넷 앙상블의 조화로운 매력을 보여주는 작품이다.</p></div></section></div>
+<div class="work"><p class="composer">W. A. Mozart</p><h3 class="small">Four Arias from “The magic flute” for Clarinet Quartet</h3><p class="arrangement">arr. by Hirokazu Fukushima</p><section aria-label="곡 설명" class="program-note visible-note"><h4 class="note-heading">곡 설명</h4><div class="note-body"><p>오페라 마술피리 중 등장하는 4개의 아리아 : “Der Vogelfänger bin ich ja”, “Alles fühlt der Liebe Freuden”, “Ein Mädchen oder Weibchen Wünscht Papageno sich”, “Wie stark ist nicht dein Zauberton”를 후쿠시마 히로카즈가 클라리넷 4중주로 편곡한 곡이다. 명랑하고 재치있는 모차르트의 음악을 클라리넷의 부드러운 음색으로 감상할 수 있다.</p></div></section></div>
+<div class="performers"><span class="performers-label">PERFORMERS / 연주자</span><span class="person"><abbr title="Clarinet">Cla.</abbr>김세영</span><span class="person"><abbr title="Clarinet">Cla.</abbr>고은비</span><span class="person"><abbr title="Clarinet">Cla.</abbr>노규민</span><span class="person"><abbr title="Clarinet">Cla.</abbr>김유석</span></div>
+</div>
+</section>
+<section aria-labelledby="work-05" class="item" id="program-05">
+<div class="item-ident"><span class="item-number">05</span><span class="item-label">BRASS<br/>TRIO</span><span aria-hidden="true" class="item-stroke"></span></div>
+<div class="works"><div class="work"><p class="composer">Francis Poulenc</p><h3 id="work-05">Sonata for Horn, Trumpet and Trombone, FP 33a</h3>
+<ol class="movements"><li><span class="roman">I.</span>Allegro moderato · Grazioso</li><li><span class="roman">II.</span>Andante</li><li><span class="roman">III.</span>Rondeau</li></ol><section aria-label="곡 설명" class="program-note visible-note"><h4 class="note-heading">곡 설명</h4><div class="note-body"><p>프란시스 풀랑크(Francis Poulenc)의 《호른, 트럼펫, 트롬본을 위한 소나타》는 1922년에 작곡된 금관 3중주 작품으로, 총 3악장으로 이루어져 있다.</p><p>프랑스 특유의 세련된 감각과 재치 있는 리듬이 돋보이며, 경쾌함과 서정적인 분위기가 조화를 이룬다. 세 악기의 개성 있는 음색과 음악적 대화를 통해 풀랑크 특유의 유머와 독창적인 음악 세계를 느낄 수 있다.</p></div></section></div>
+<div class="performers"><span class="performers-label">PERFORMERS / 연주자</span><span class="person"><abbr title="Horn">Hn.</abbr>유민재</span><span class="person"><abbr title="Trumpet">Tp.</abbr>한준혁</span><span class="person"><abbr title="Trombone">Tb.</abbr>오소림</span></div>
+</div>
+</section>
+<section aria-labelledby="work-06" class="item" id="program-06">
+<div class="item-ident"><span class="item-number">06</span><span class="item-label">STRING<br/>OCTET</span><span aria-hidden="true" class="item-stroke"></span></div>
+<div class="works"><div class="work"><p class="composer">Reinhold Moritzevich Glière</p><h3 id="work-06">String Octet in D Major, op. 5</h3>
+<ol class="movements"><li><span class="roman">I.</span>Allegro moderato</li></ol><section aria-label="곡 설명" class="program-note visible-note"><h4 class="note-heading">곡 설명</h4><div class="note-body"><p>글리에르의 《현악 8중주 D장조, Op. 5》는 1900년에 작곡된 초기 실내악 작품으로, 네 대의 바이올린과 두 대의 비올라, 두 대의 첼로를 위해 쓰였다. 젊은 시절 글리에르의 낭만적인 음악 어법과 풍부한 현악 앙상블의 색채를 엿볼 수 있는 작품이다.</p><p>제1악장 Allegro moderato는 힘차고 생동감 있는 주제와 부드럽고 서정적인 선율이 대비를 이루며 전개된다. 여덟 개의 성부가 서로 선율을 주고받거나 겹쳐지면서 음악의 흐름을 확장하며, 때로는 섬세한 실내악적 대화를, 때로는 오케스트라를 연상시키는 풍성하고 입체적인 울림을 만들어 낸다. 이러한 대비와 긴밀한 앙상블을 통해 글리에르 특유의 서정성과 활력을 함께 느낄 수 있다.</p></div></section></div>
+<div class="performers"><span class="performers-label">PERFORMERS / 연주자</span><span class="person"><abbr title="Violin 1">Vn1</abbr>양나영</span><span class="person"><abbr title="Violin 2">Vn2</abbr>김윤아</span><span class="person"><abbr title="Violin 3">Vn3</abbr>권하림</span><span class="person"><abbr title="Violin 4">Vn4</abbr>신승미</span><span class="person"><abbr title="Viola 1">Va1</abbr>임소현</span><span class="person"><abbr title="Viola 2">Va2</abbr>김예지</span><span class="person"><abbr title="Cello 1">Vc1</abbr>홍예지</span><span class="person"><abbr title="Cello 2">Vc2</abbr>최로사</span></div>
+</div>
+</section>
+</div>
+</main>
+<footer class="footer">
+<div class="wrap footer-inner">
+<p class="footer-kicker">SOUND IN SPACE · 2026.11.26</p>
+<h2>Thank you.</h2>
+<p>소리로 쌓아 올린 하나의 공간<br/>함께해 주셔서 감사합니다.</p>
+<div class="footer-links">
+<a class="toplink" href="./program-notes.pdf" rel="noopener" target="_blank">원본 곡 해설 PDF ↗</a><a aria-label="원본 공연 프로그램 PDF 새 창에서 열기" class="download" href="./program.pdf" rel="noopener" target="_blank">원본 프로그램 PDF 보기 <span aria-hidden="true">↗</span></a>
+<a class="toplink" href="#top">맨 위로 ↑</a>
+</div>
+<div class="footer-bottom"><span>SOUND IN SPACE</span><span>JEJU · 2026</span></div>
+</div>
+</footer>
+<script>
+(function(){
+  var p = document.getElementById('progress');
+  function update(){var max=document.documentElement.scrollHeight-window.innerHeight; p.style.width=(max>0?Math.min(100,Math.max(0,window.scrollY/max*100)):100)+'%';}
+  window.addEventListener('scroll',update,{passive:true}); window.addEventListener('resize',update); update();
+})();
+</script>
+</body>
+</html>
